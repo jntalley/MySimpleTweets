@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Tweet" parent="AppBaseTheme">
+        <item name="colorPrimary">#ff1da1f2</item>
+        <item name="colorPrimaryDark">#ff1370a9</item>
+        <item name="colorAccent">#801da1f2</item>
+        <item name="android:navigationBarColor">?android:attr/colorPrimaryDark</item>
+    </style>
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#ff1370a9</item>
+        <item name="android:logo">@drawable/download</item>
+        <item name="android:displayOptions">useLogo|showHome</item>
+    </style>
+</resources>

@@ -28,8 +28,14 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
 
         mTweets = tweets;
     }
+    public void clear() {
+        mTweets.clear();
+        notifyDataSetChanged();
+    }
 
-    //for each row in recycler view (new item_tweet), inflate them into view
+
+
+        //for each row in recycler view (new item_tweet), inflate them into view
     //only invoke when new row is needed
 
     @Override

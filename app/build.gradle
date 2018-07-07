@@ -16,6 +16,9 @@ android {
             }
         }
     }
+    ext {
+        supportLibVersion = '27.1.1'  // variable that can be referenced to keep support libs consistent
+    }
 
     // Related to https://github.com/scribejava/scribejava/issues/480
     // Scribe expects Java 7 or this custom Apache library
@@ -30,6 +33,7 @@ android {
         }
     }
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
@@ -47,4 +51,6 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.0'
     implementation 'org.parceler:parceler-api:1.1.6'
     annotationProcessor 'org.parceler:parceler:1.1.6'
+    implementation 'com.android.support:design:27.1.1'
+    implementation "android.arch.paging:runtime:1.0.0"
 }

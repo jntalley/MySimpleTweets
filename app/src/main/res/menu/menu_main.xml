@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".TimelineActivity">>
 
 <!--implement on click method-->
 
     <item
         android:id="@+id/tweetCompose"
-        android:icon="@android:drawable/ic_input_add"
+        android:icon= "@drawable/ic_action_name"
         android:title="@string/composetweet"
         app:showAsAction="always"
         android:onClick="composeNewTweet"
         />
+    <item
+        android:id="@+id/miActionProgress"
+        android:title="Loading..."
+        android:visible="false"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        app:actionLayout="@layout/action_view_progress" />
 </menu>

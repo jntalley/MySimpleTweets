@@ -16,4 +16,10 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="Tweet" parent="AppBaseTheme" >
+        <item name="colorPrimary">#ff1da1f2</item>
+        <item name="colorPrimaryDark">#ff1370a9</item>
+        <item name="colorAccent">#801da1f2</item>
+    </style>
+
 </resources>
